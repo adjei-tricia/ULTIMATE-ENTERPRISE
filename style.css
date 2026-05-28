@@ -59,6 +59,15 @@ body {
     justify-content: center;
 }
 
+
+
+.price{
+  font-size:22px;
+  font-weight:bold;
+  color:#06152f;
+  margin:10px 0;
+}
+
 .hero-product-info h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -223,4 +232,9 @@ body {
     .features-grid { grid-template-columns: 1fr; }
     .main-navbar { padding: 1rem 2rem; }
     .hero-product-info, .hero-form-panel { padding: 2rem; }
+}
+.delivery-fee{
+    margin-top: 10px;
+    color: #bfc9d4;
+    font-size: 15px;
 }
