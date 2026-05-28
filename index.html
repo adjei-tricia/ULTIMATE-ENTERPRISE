@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Mart GH</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+    <header class="main-navbar">
+        <div class="brand-logo">Ultimate Mart GH</div>
+        <nav class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    
+    <main id="home" class="hero-split-section">
+        
+        
+        <div class="hero-product-info">
+            <h1>Powerful Electric Scrubbing Machine</h1>
+            <p class="tagline">Deep clean your bathroom, kitchen, tiles and floors effortlessly. Fast, rechargeable, and designed to make cleaning easier.</p>
+            
+            <div class="main-image-box">
+                
+                <video width="350px; height: auto; " controls autoplay muted loop>
+    <source src="scrubber.mp4" type="video/mp4">
+</video>
+            </div>
+        </div>
+
+        
+        <div class="hero-form-panel">
+            
+            
+            <div id="login-step" class="form-card">
+                <h2>Secure Checkout</h2>
+                <p class="form-subtitle">Log in to your account to place your order.</p>
+                <form onsubmit="handleNextStep(event)">
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" required placeholder="example@email.com">
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" required placeholder="••••••••">
+                    </div>
+                    <button type="submit" class="form-btn login-btn">Continue to Order</button>
+                </form>
+            </div>
+
+        
+            <div id="order-step" class="form-card hidden">
+                <div class="form-card-header">
+                    <h2>Delivery Details</h2>
+                    <button class="back-link" onclick="handleBackStep()">← Back</button>
+                </div>
+                <p class="form-subtitle">Enter your delivery location in Ghana.</p>
+                <form onsubmit="handleFinalOrder(event)">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" required placeholder="Kofi Mensah">
+                    </div>
+                    <div class="input-group">
+                        <label>Delivery Location</label>
+                        <input type="text" required placeholder="Accra, Digital Address, etc.">
+                    </div>
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input type="tel" required placeholder="024 XXX XXXX">
+                    </div>
+                    <button type="submit" class="form-btn order-btn">Confirm Order</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+
+    <section id="features" class="features-section">
+        <h2 class="section-title">Product Features & Capabilities</h2>
+        
+        <div class="features-grid">
+            
+            <div class="feature-card">
+                <h3>Powerful Rotation</h3>
+                <div class="feature-img-wrapper">
+                    <img src="image2.png" alt="Powerful Rotation">
+                </div>
+                <p>Removes stubborn dirt and stains quickly.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Rechargeable Battery</h3>
+                <div class="feature-img-wrapper">
+                    <img src="image1.png" alt="Rechargeable Battery">
+                </div>
+                <p>Long-lasting battery.</p>
+            </div>
+
+            
+            <div class="feature-card">
+                <h3>Multiple Brush Heads</h3>
+                <div class="feature-img-wrapper">
+                    <img src="image3.png" alt="Multiple Brush Heads">
+                </div>
+                <p>Perfect for sinks, bathroom, tiles and kitchens.</p>
+            </div>
+        </div>
+        
+        <div class="feature-card">
+                <h3>Before and After</h3>
+                <div class="feature-img-wrapper">
+                    <img src="image.png" alt="Before and After">
+                </div>
+                <p>Perfect for sinks, bathroom, tiles and kitchens.</p>
+            </div>
+        </div>
+        
+    </section>
+
+    
+    <footer id="contact" class="contact-footer">
+        <h2>Questions? Get in Touch 👇</h2>
+         <h3>📞+233244708435</h3>
+     <p>Support Email: support@ultimatemartgh.com</p>
+        <p>&copy; 2026 Ultimate Mart GH. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
