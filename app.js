@@ -1,6 +1,6 @@
 const loginStep = document.getElementById('login-step');
 const orderStep = document.getElementById('order-step');
-const WHATSAPP_NUMBER = '0598663389'; // Replace with your WhatsApp number
+const WHATSAPP_NUMBER = '+233598663389'; // Replace with your WhatsApp number
 let emailInput = document.getElementById('email');
 let passwordInput = document.getElementById('password');
 let nameInput = document.getElementById('name');
@@ -28,9 +28,11 @@ function handleFinalOrder(event) {
     };
 
     const message =
+         `Hello, I would like to place an order with the following details:\n` +
         `Name: ${formData.name}\n` +
         `Phone: ${formData.phone}\n` +
-        `Address: ${formData.address}`;
+        `Address: ${formData.address} \n` + `Product: 9-in-1 Electric Scrubbing Machine`;
+
 
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
