@@ -55,7 +55,7 @@
                 </form>
             </div>
 
-        
+        <!-- when hit on confirm, form should be redirected to whatsApp with the preloaded information -->
             <div id="order-step" class="form-card hidden">
                 <div class="form-card-header">
                     <h2>Delivery Details</h2>
@@ -65,15 +65,15 @@
                 <form onsubmit="handleFinalOrder(event)">
                     <div class="input-group">
                         <label>Full Name</label>
-                        <input type="text" required placeholder="Kofi Mensah">
+                        <input id="name" type="text" required placeholder="Kofi Mensah">
                     </div>
                     <div class="input-group">
                         <label>Delivery Location</label>
-                        <input type="text" required placeholder="Accra, Digital Address, etc.">
+                        <input id="address" type="text" required placeholder="Accra, Digital Address, etc.">
                     </div>
                     <div class="input-group">
                         <label>Phone Number</label>
-                        <input type="tel" required placeholder="024 XXX XXXX">
+                        <input id="phone" type="tel" required placeholder="024 XXX XXXX">
                     </div>
                     <button type="submit" class="form-btn order-btn">Confirm Order</button>
                 </form>
