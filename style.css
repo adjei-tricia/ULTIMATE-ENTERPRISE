@@ -170,10 +170,11 @@ body {
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); 
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+
 }
 
 .feature-card {
@@ -236,5 +237,5 @@ body {
 .delivery-fee{
     margin-top: 10px;
     color: #bfc9d4;
-    font-size: 15px;
+    font-size: 20px;
 }
